@@ -3,9 +3,9 @@ set -euo pipefail
 
 #    Copy over Jupyter configuration files
 mkdir -p ${CONDA_DIR}/etc/ipython
-cp ipython_config.py ${CONDA_DIR}/etc/ipython/ipython_config.py
+cp binder/ipython_config.py ${CONDA_DIR}/etc/ipython/ipython_config.py
 mkdir -p ${CONDA_DIR}/etc/jupyter
-cp jupyter_notebook_config.py ${CONDA_DIR}/etc/jupyter/jupyter_notebook_config.py
+cp binder/jupyter_notebook_config.py ${CONDA_DIR}/etc/jupyter/jupyter_notebook_config.py
 
 # This was probably what broke it?
 #    Get up-to-date version of JupyterHub
